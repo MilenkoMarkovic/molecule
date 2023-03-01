@@ -9,7 +9,7 @@
 
   handlers:
     - name: restart apache
-      service:
+      ansible.builtin.service:
         name: "{{ apache_service }}"
         state: restarted
 
